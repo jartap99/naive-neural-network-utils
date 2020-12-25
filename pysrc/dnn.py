@@ -52,6 +52,7 @@ class DNN(object):
         non - vectroized - intention is not to make it faster but to assess 
         funcitonal correctness; eventually helping in hardware acceleration libraries 
         """
+        print("*** DNN.%s ***"%activationType)
         def f_relu(x):
             if (x<0): return 0
             else: return x
